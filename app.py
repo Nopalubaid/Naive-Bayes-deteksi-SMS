@@ -143,17 +143,17 @@ def show_other_page():
     # model = MultinomialNB()
     # model.fit(x_train, y_train)
 
-    # # Predictions and evaluation
-    # st.subheader("Naive Bayes Classification Results:")
-    # predicted = model.predict(x_test)
+    # Predictions and evaluation
+    st.subheader("Naive Bayes Classification Results:")
+    predicted = model.predict(x_test)
 
-    # # Confusion matrix and classification report
-    # CM = confusion_matrix(y_test, predicted)
-    # st.write("Confusion Matrix:")
-    # st.write(CM)
+    # Confusion matrix and classification report
+    CM = confusion_matrix(y_test, predicted)
+    st.write("Confusion Matrix:")
+    st.write(CM)
 
-    # st.write("Classification Report:")
-    # st.write(classification_report(y_test, predicted))
+    st.write("Classification Report:")
+    st.write(classification_report(y_test, predicted))
 
 ################################################################################################################################################
 ################################################################################################################################################
@@ -222,24 +222,24 @@ def show_home():
             # st.write(accuracy)
 
             # Calculate and display classification report
-            st.subheader('Metrik Klasifikasi:')
-            report_dict = classification_report([predict_label], predict_fraud, labels=[0, 1, 2], output_dict=True)
-            report_df = pd.DataFrame(report_dict).transpose()
+        #     st.subheader('Metrik Klasifikasi:')
+        #     report_dict = classification_report([predict_label], predict_fraud, labels=[0, 1, 2], output_dict=True)
+        #     report_df = pd.DataFrame(report_dict).transpose()
 
-            # Melt the DataFrame for better visualization
-            melted_df = pd.melt(report_df.reset_index(), id_vars=['index'], var_name='metric', value_name='score')
+        #     # Melt the DataFrame for better visualization
+        #     melted_df = pd.melt(report_df.reset_index(), id_vars=['index'], var_name='metric', value_name='score')
 
-            # Display the classification report as a bar chart
-            chart = alt.Chart(melted_df).mark_bar().encode(
-                x='index:N',
-                y='score:Q',
-                color='metric:N',
-                column='metric:N'
-            ).configure_mark(color='blue')
+        #     # Display the classification report as a bar chart
+        #     chart = alt.Chart(melted_df).mark_bar().encode(
+        #         x='index:N',
+        #         y='score:Q',
+        #         color='metric:N',
+        #         column='metric:N'
+        #     ).configure_mark(color='blue')
 
-            st.altair_chart(chart, use_container_width=True)
-        else:
-            st.warning('Masukkan teks Pesan terlebih dahulu.')
+        #     st.altair_chart(chart, use_container_width=True)
+        # else:
+        #     st.warning('Masukkan teks Pesan terlebih dahulu.')
 
 # if st.button('Terjemahkan Gambar'):
 #     if uploaded_image:
