@@ -164,7 +164,7 @@ def show_home():
     model_fraud = pickle.load(open('model_fraud.sav', 'rb'))
 
     # Load TF-IDF vectorizer with vocabulary
-    loaded_vec = TfidfVectorizer(decode_error="replace", vocabulary=set(pickle.load(open("D:\kuliah nopal\semester 3\Data Mining\dataset crawling\deteksi spam\qnew_selected_feature_tf-idf.sav", "rb"))))
+    loaded_vec = TfidfVectorizer(decode_error="replace", vocabulary=set(pickle.load(open("qnew_selected_feature_tf-idf.sav", "rb"))))
 
     # Set page title and description
     st.title('Prediksi Pesan Penipuan')
