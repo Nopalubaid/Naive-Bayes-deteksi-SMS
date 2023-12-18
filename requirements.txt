@@ -5,8 +5,6 @@ python-time
 scikit-learn
 pytesseract
 Pillow
-googletrans
-re
 nltk
 Sastrawi
 matplotlib
