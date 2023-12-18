@@ -29,7 +29,7 @@ def show_other_page():
     with st.spinner("Sedang memuat..."):
         time.sleep(2)
     st.write('dataset yang digunakan')
-    data = pd.read_csv("D:\kuliah nopal\semester 3\Data Mining\dataset crawling\deteksi spam\dataset_sms.csv")
+    data = pd.read_csv("dataset_sms.csv")
     st.dataframe(data)
 
     # Load nltk stopwords for Indonesian
@@ -83,7 +83,7 @@ def show_other_page():
         return vec_TF_IDF.transform(corpus)
 
     # Load key_norm dataset
-    key_norm_path = 'D:\kuliah nopal\semester 3\Data Mining\dataset crawling\deteksi spam\key_norm.csv'
+    key_norm_path = 'key_norm.csv'
     key_norm = pd.read_csv(key_norm_path)
 
     # Case folding and word normalization comparison
@@ -108,7 +108,7 @@ def show_other_page():
 
     # Hasil preprosesing
     st.subheader('dataset hasil preprosesing')
-    hasil = pd.read_csv("D:\kuliah nopal\semester 3\Data Mining\dataset crawling\deteksi spam\clean_data.csv")
+    hasil = pd.read_csv("clean_data.csv")
     st.dataframe(hasil)
 
     # TF-IDF vectorization
@@ -161,7 +161,7 @@ def show_other_page():
 # Fungsi untuk menampilkan halaman 1
 def show_home():
     # LOAD SAVE MODEL
-    model_fraud = pickle.load(open('D:\kuliah nopal\semester 3\Data Mining\dataset crawling\deteksi spam\model_fraud.sav', 'rb'))
+    model_fraud = pickle.load(open('model_fraud.sav', 'rb'))
 
     # Load TF-IDF vectorizer with vocabulary
     loaded_vec = TfidfVectorizer(decode_error="replace", vocabulary=set(pickle.load(open("D:\kuliah nopal\semester 3\Data Mining\dataset crawling\deteksi spam\qnew_selected_feature_tf-idf.sav", "rb"))))
