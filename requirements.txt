@@ -1,0 +1,13 @@
+pickle5
+streamlit
+pandas
+python-time
+scikit-learn
+pytesseract
+Pillow
+googletrans
+re
+nltk
+Sastrawi
+matplotlib
+altair
