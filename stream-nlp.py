@@ -5,7 +5,7 @@ import time
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pytesseract
 from PIL import Image
-from googletrans import Translator  # Import Translator from googletrans library
+# from googletrans import Translator  # Import Translator from googletrans library
 import re
 import nltk
 nltk.download('punkt')
