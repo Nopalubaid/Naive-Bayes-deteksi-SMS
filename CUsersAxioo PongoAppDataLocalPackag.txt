@@ -1,0 +1,7 @@
+C:\Users\Axioo Pongo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts>streamlit run "D:\kuliah nopal\semester 3\Data Mining\dataset crawling\deteksi spam\stream-nlp.py"
+
+mama kirimin pulsa ini darurat
+
+beli 1 dapat 1 
+
+otw

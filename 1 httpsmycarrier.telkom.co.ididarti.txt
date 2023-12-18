@@ -1,0 +1,22 @@
+1 https://mycarrier.telkom.co.id/id/article/sejarah-sms-sebagai-metode-komunikasi
+
+2 file:///D:/kuliah%20nopal/semester%203/Data%20Mining/s10792-020-01616-w.pdf
+
+3 https://www.bca.co.id/id/informasi/awas-modus/2023/01/19/03/38/hindari-jebakan-sms-palsu-dengan-memahami-smishing
+
+4 I. Rahmayani, “Atasi SMS Spam, Ini Langkah Operator Seluler,” 2015. https://kominfo.go.id/content/detail/6042/atasi-sms-spam-ini-langkah-operatorseluler/0/sorotan_media
+
+
+
+6 Sethi, G., dan V. Bhootna. (2014) Aplikasi Penyaringan Spam SMS Menggunakan Android
+
+7  Nagwani, NK (2017) “Pendekatan Klasifikasi Teks Dua Tingkat untuk Penyaringan Spam SMS dan Mengidentifikasi Pesan Prioritas.” 14 (4): 8
+
+5 Aski, A. S., & Sourati, N. K. (Tahun publikasi). Proposed efficient algorithm to filter spam using machine learning techniques. [Judul Jurnal atau Nama Konferensi], Volume (jika ada), Halaman (jika ada). 
+
+8. Q.-R. Zhang, L. Zhang, S.-B. Dong, and J.-H. Tan, 
+“Document indexing in text categorization,” in 
+Proceedings of 2005 International Conference 
+on Machine Learning and Cybernetics, 2005, 
+2005, vol. 6, pp. 3792-3796 Vol. 6, doi: 
+10.1109/ICMLC.2005.1527600
