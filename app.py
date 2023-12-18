@@ -133,8 +133,8 @@ def show_other_page():
     x_tf_idf = vec_TF_IDF.fit_transform(x)
 
     # Display TF-IDF results
-    # st.write("TF-IDF Vectorized Feature (x_tf_idf):")
-    # st.write(x_tf_idf)
+    st.write("TF-IDF Vectorized Feature (x_tf_idf):")
+    st.write(x_tf_idf)
 
     # Train-test split for Naive Bayes classification
     x_train, x_test, y_train, y_test = train_test_split(x_tf_idf, y, test_size=0.2, random_state=0)
