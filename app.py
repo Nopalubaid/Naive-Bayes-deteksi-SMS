@@ -137,11 +137,11 @@ def show_other_page():
     st.write(x_tf_idf)
 
     # Train-test split for Naive Bayes classification
-    # x_train, x_test, y_train, y_test = train_test_split(x_tf_idf, y, test_size=0.2, random_state=0)
+    x_train, x_test, y_train, y_test = train_test_split(x_tf_idf, y, test_size=0.2, random_state=0)
 
-    # # Naive Bayes model
-    # model = MultinomialNB()
-    # model.fit(x_train, y_train)
+    # Naive Bayes model
+    model = MultinomialNB()
+    model.fit(x_train, y_train)
 
     # Predictions and evaluation
     st.subheader("Naive Bayes Classification Results:")
