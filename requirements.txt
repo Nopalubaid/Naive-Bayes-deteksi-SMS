@@ -9,4 +9,4 @@ nltk
 Sastrawi
 matplotlib
 altair
-seaborn
+seaborn==0.11.2
