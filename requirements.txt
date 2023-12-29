@@ -9,4 +9,3 @@ nltk
 Sastrawi
 matplotlib
 altair
-seaborn
