@@ -5,7 +5,7 @@ import time
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pytesseract
 from PIL import Image
-from googletrans import Translator  # Import Translator from googletrans library
+#from googletrans import Translator  # Import Translator from googletrans library
 import re
 import nltk
 nltk.download('punkt')
@@ -163,10 +163,10 @@ import seaborn as sns
 # Fungsi untuk menampilkan halaman 1
 # def show_home():
 # LOAD SAVE MODEL
-model_fraud = pickle.load(open('D:\kuliah nopal\semester 3\Data Mining\dataset crawling\deteksi spam\model_fraud.sav', 'rb'))
+model_fraud = pickle.load(open('model_fraud.sav', 'rb'))
 
 # Load TF-IDF vectorizer with vocabulary
-loaded_vec = TfidfVectorizer(decode_error="replace", vocabulary=set(pickle.load(open("D:\kuliah nopal\semester 3\Data Mining\dataset crawling\deteksi spam\qnew_selected_feature_tf-idf.sav", "rb"))))
+loaded_vec = TfidfVectorizer(decode_error="replace", vocabulary=set(pickle.load(open("qnew_selected_feature_tf-idf.sav", "rb"))))
 
 # Set page title and description
 st.title('Prediksi Pesan Penipuan')
