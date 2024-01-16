@@ -224,29 +224,29 @@ if st.button('Deteksi Penipuan'):
         # st.write(accuracy)
 
         # Calculate and display classification report
-        st.subheader('Metrik Klasifikasi:')
-        report = classification_report([predict_label], predict_fraud, labels=[0, 1, 2])
-        st.text(report)
+        # st.subheader('Metrik Klasifikasi:')
+        # report = classification_report([predict_label], predict_fraud, labels=[0, 1, 2])
+        # st.text(report)
 
-        # Plot bar chart for precision, recall, and f1-score
-        metrics_dict = classification_report([predict_label], predict_fraud, labels=[0, 1, 2], output_dict=True)
-        metrics_df = pd.DataFrame(metrics_dict).transpose()
-        metrics_df = metrics_df[['precision', 'recall', 'f1-score']]
+        # # Plot bar chart for precision, recall, and f1-score
+        # metrics_dict = classification_report([predict_label], predict_fraud, labels=[0, 1, 2], output_dict=True)
+        # metrics_df = pd.DataFrame(metrics_dict).transpose()
+        # metrics_df = metrics_df[['precision', 'recall', 'f1-score']]
         
-        plt.figure(figsize=(10, 6))
-        metrics_df.plot(kind='bar', rot=0, ax=plt.gca())
-        plt.title('Metrik Klasifikasi')
-        plt.ylabel('Nilai')
-        plt.legend(title='Kelas', bbox_to_anchor=(1.05, 1), loc='upper left')
-        plt.tight_layout()
+        # plt.figure(figsize=(10, 6))
+        # metrics_df.plot(kind='bar', rot=0, ax=plt.gca())
+        # plt.title('Metrik Klasifikasi')
+        # plt.ylabel('Nilai')
+        # plt.legend(title='Kelas', bbox_to_anchor=(1.05, 1), loc='upper left')
+        # plt.tight_layout()
         
-        # Pass the figure to st.pyplot() to avoid the warning
-        st.pyplot(plt.gcf())
+        # # Pass the figure to st.pyplot() to avoid the warning
+        # st.pyplot(plt.gcf())
 
-        # Calculate and display accuracy
-        accuracy = accuracy_score([predict_label], predict_fraud)
-        st.subheader('Akurasi:')
-        st.write(accuracy)
+        # # Calculate and display accuracy
+        # accuracy = accuracy_score([predict_label], predict_fraud)
+        # st.subheader('Akurasi:')
+        # st.write(accuracy)
     else:
         st.warning('Masukkan teks Pesan terlebih dahulu.')
 
